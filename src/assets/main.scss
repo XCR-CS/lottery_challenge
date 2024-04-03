@@ -1,0 +1,111 @@
+$tabletBreakpoint: '768px';
+$desktopBreakpoint: '1024px';
+
+html {
+    font-family: sans-serif;
+    background: rgb(200,226,193);
+    background: linear-gradient(0deg, rgba(200,226,193,1) 0%, rgba(239,245,238,1) 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+
+    @media (min-width: $tabletBreakpoint) {
+        padding: 0 50px;
+    }
+
+    @media (min-width: $desktopBreakpoint) {
+        padding: 0 100px;
+    }
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    transition: background-color .25s ease-out, color .25s ease-out;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background-color: forestgreen;
+    border: 1px solid forestgreen;
+    font-size: 20px;
+
+    &:hover {
+        background-color: transparent;
+        color: forestgreen;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 0;
+
+    @media (min-width: $tabletBreakpoint) {
+        font-size: 30px;
+    }
+
+    @media (min-width: $desktopBreakpoint) {
+        font-size: 40px;
+    }
+}
+
+.lottery {
+    padding: 30px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 0px #aaa;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.lottery__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: $tabletBreakpoint) {
+        font-size: 25px;
+    }
+
+    @media (min-width: $desktopBreakpoint) {
+        font-size: 30px;
+    }
+}
+
+.lottery__prize {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    @media (min-width: $tabletBreakpoint) {
+        font-size: 40px;
+    }
+
+    @media (min-width: $desktopBreakpoint) {
+        font-size: 50px;
+    }
+}
+
+.lottery__prizeHighlight {
+    display: inline-block;
+    color: forestgreen;
+}
